@@ -4,7 +4,7 @@
 #include <nlohmann/json.hpp>
 #include <iostream>
 #include "trader.hpp"
-#include "logger.hpp"  // Added logger include
+#include "logger.hpp" 
 using json = nlohmann::json;
 
 using namespace std;

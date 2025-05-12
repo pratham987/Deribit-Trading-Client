@@ -15,7 +15,7 @@ std::string Logger::generateLogFileName() {
     auto now_time_t = std::chrono::system_clock::to_time_t(now);
     
     std::stringstream ss;
-    ss << "/home/pratham/gq_task/v2/log_" 
+    ss << "/path/to/logs/" // Replace with your desired log directory
        << std::put_time(std::localtime(&now_time_t), "%Y%m%d_%H%M%S") 
        << ".txt";
     return ss.str();

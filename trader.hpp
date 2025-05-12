@@ -15,13 +15,6 @@ public:
     std::string authenticate();
     json sendRequest(const std::string &endpoint);
 
-    // Additional methods (currently commented out in your implementation)
-    // std::string buy(const std::string& instrumentName, double amount, double price, const std::string& type);
-    // std::string cancelOrder(const std::string& orderId);
-    // std::string modifyOrder(const std::string& adv, const std::string& orderId, double amount, double price, const std::string& type);   
-    // std::string viewCurrentPositions(const std::string& currency, const std::string& kind);
-    // std::string fetchOrderBook();
-
 private:
     std::string clientId;
     std::string clientSecret;

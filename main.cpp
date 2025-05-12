@@ -51,7 +51,7 @@ int main() {
             string instrument_name, type, channel;
             string order_id;
 
-            cout << "\n===== Crypto Trading Interface =====\n";
+            cout << "\n===== Bitget Trading Interface =====\n";
             cout << "Select action: " << endl;
             cout << "1) Buy" << endl;
             cout << "2) Sell" << endl;
@@ -70,7 +70,7 @@ int main() {
             switch (choice) {
                 case 1: // Buy
                     endpoint = "private/buy";
-                    cout << "Enter instrument name (e.g., BTC-PERPETUAL): ";
+                    cout << "Enter instrument name: ";
                     cin >> instrument_name;
                     cout << "Enter amount: ";
                     cin >> amount;
@@ -98,7 +98,7 @@ int main() {
                     
                 case 2: // Sell
                     endpoint = "private/sell";
-                    cout << "Enter instrument name (e.g., BTC-PERPETUAL): ";
+                    cout << "Enter instrument name: ";
                     cin >> instrument_name;
                     cout << "Enter amount: ";
                     cin >> amount;
@@ -168,7 +168,7 @@ int main() {
                     
                 case 5: // View Positions
                     endpoint = "private/get_position";
-                    cout << "Enter instrument name (e.g., BTC): ";
+                    cout << "Enter instrument name: ";
                     cin >> instrument_name;
 
                     endpoint = endpoint + "?instrument_name=" + instrument_name;
@@ -185,7 +185,7 @@ int main() {
                     break;
                 case 6: // Order Book
                     endpoint = "public/get_order_book";
-                    cout << "Enter instrument name (e.g., BTC-PERPETUAL): ";
+                    cout << "Enter instrument name ";
                     cin >> instrument_name;
 
                     endpoint = endpoint + "?instrument_name=" + instrument_name;

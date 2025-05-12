@@ -14,11 +14,6 @@
 #include <chrono>
 #include <atomic>
 
-// // Define the WebSocket client type
-// typedef websocketpp::client<websocketpp::config::asio_tls_client> client;
-// typedef websocketpp::lib::shared_ptr<websocketpp::lib::asio::ssl::context> context_ptr;
-// typedef websocketpp::config::asio_client::message_type::ptr message_ptr;
-// typedef websocketpp::connection_hdl connection_hdl;
 
 class DeribitWebSocketClient {
 public:
@@ -32,7 +27,6 @@ public:
         const std::string& client_secret
     );
 
-    // std::atomic<int> m_requestIdCounter{1};
     void connect();
     int getNextId();
     void run();
