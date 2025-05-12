@@ -133,7 +133,7 @@ For market data streaming (option 7), you can subscribe to channels like:
 
 ## Logs
 
-Logs are stored in the directory specified in `logger.cpp`. By default, they will be saved to `/home/pratham/gq_task/v2/` with filenames following the pattern `log_YYYYMMDD_HHMMSS.txt`.
+Logs are stored in the directory specified in `logger.cpp`. By default, they will be saved with filenames following the pattern `log_YYYYMMDD_HHMMSS.txt`.
 
 ## Performance Metrics
 
